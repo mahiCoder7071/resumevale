@@ -1,2 +1,3 @@
-# resumevale
-a resume service
+# Welcome to your Lovable project
+
+TODO: Document your project here
