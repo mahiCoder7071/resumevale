@@ -27,8 +27,8 @@ const PortalFooter = () => (
         <div>
           <h4 className="font-heading font-semibold text-white mb-4">Contact</h4>
           <ul className="space-y-3 text-sm text-white/50">
-            <li className="flex items-center gap-2"><Mail size={14} className="text-primary" /> </li>
-            <li className="flex items-center gap-2"><Phone size={14} className="text-primary" /> +91 79059 54971</li>
+            <li className="flex items-center gap-2"><Mail size={14} className="text-primary" />support@resumevale.com </li>
+            <li className="flex items-center gap-2"><Phone size={14} className="text-primary" /> 7905954971</li>
             <li className="flex items-center gap-2"><MapPin size={14} className="text-primary" /> New Delhi, India</li>
           </ul>
         </div>
@@ -36,7 +36,7 @@ const PortalFooter = () => (
 
       <div className="border-t border-white/10 pt-6 text-center">
         <p className="text-white/30 text-xs">
-          © 2022 RESUMEVALE All rights reserved.
+          © 2026 RESUMEVALE All rights reserved.
         </p>
       </div>
     </div>

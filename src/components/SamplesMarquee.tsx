@@ -1,17 +1,17 @@
 import { motion } from "framer-motion";
 
 const sampleImages = [
-  "https://resumewale.com/images/s1.jpg",
-  "https://resumewale.com/images/s2.jpg",
-  "https://resumewale.com/images/s3.jpg",
-  "https://resumewale.com/images/s4.jpg",
+  "/images/a1.jpg",
+  "/images/a2.jpg",
+  "/images/a3.jpg",
+  "/images/a4.jpg"
 ];
 
 const sampleImages2 = [
-  "https://resumewale.com/images/s5.jpg",
-  "https://resumewale.com/images/s6.jpg",
-  "https://resumewale.com/images/s7.jpg",
-  "https://resumewale.com/images/s8.jpg",
+  "/images/a5.jpg",
+  "/images/a6.jpg",
+  "/images/a7.jpg",
+  "/images/a8.jpg"
 ];
 
 const MarqueeRow = ({ images, reverse = false }: { images: string[]; reverse?: boolean }) => {

@@ -6,6 +6,7 @@ import FeaturesSection from "@/components/FeaturesSection";
 import StatsSection from "@/components/StatsSection";
 import PricingSection from "@/components/PricingSection";
 import PortalFooter from "@/components/PortalFooter";
+import LiveOrders from "@/components/LiveOrders";
 
 const Index = () => (
   <main className="min-h-screen">
@@ -17,6 +18,7 @@ const Index = () => (
     <StatsSection />
     <PricingSection />
     <PortalFooter />
+    <LiveOrders />
   </main>
 );
 
