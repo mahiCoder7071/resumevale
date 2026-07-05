@@ -28,6 +28,15 @@ const plans = [
     variant: "heroOutline",
     popular: false,
   },
+  {
+    name: "Profile Boost",
+    price: "₹3,999",
+    badge: "All Profiles",
+    features: ["LinkedIn Optimization", "Naukri Profile Setup", "Indeed Profile", "Naukri Gulf Profile", "Recruiter Keywords"],
+    variant: "heroOutline",
+    popular: false,
+    pkg: "profiles",
+  },
 ];
 
 const PricingSection = () => {
@@ -50,7 +59,7 @@ const PricingSection = () => {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
           {plans.map((plan, i) => (
             <motion.div
               key={i}
@@ -101,7 +110,7 @@ const PricingSection = () => {
                 className="w-full"
                 size="lg"
                 type="button"
-                onClick={() => navigate("/order")}
+                onClick={() => navigate(plan.pkg ? `/order?package=${plan.pkg}` : "/order")}
               >
                 Choose Plan <ArrowRight size={16} />
               </Button>

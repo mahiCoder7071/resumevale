@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 import { ArrowLeft, CheckCircle2, Star, Zap } from "lucide-react";
 
 /* ─── Your WhatsApp number (with country code, no + or spaces) ─── */
@@ -23,16 +23,32 @@ const PACKAGES = [
     features: ["ATS DNA Mapping", "Cover Letter Free", "Priority Delivery"],
     color: "#1565C0",
   },
+  {
+    id: "profiles",
+    name: "PROFILE BOOST",
+    price: "₹3,999",
+    tag: "ALL PROFILES",
+    features: ["LinkedIn + Naukri", "Indeed + Naukri Gulf", "Recruiter Keywords"],
+    color: "#1565C0",
+  },
 ];
 
 const OrderPage = () => {
   const navigate = useNavigate();
+  const [searchParams] = useSearchParams();
+
+  // Preselect package from URL (?package=profiles), else default to executive
+  const requestedPkg = searchParams.get("package");
+  const defaultPkg = PACKAGES.some((p) => p.id === requestedPkg)
+    ? (requestedPkg as string)
+    : "executive";
+
   const [form, setForm] = useState({
     name: "",
     email: "",
     jobRole: "",
     experience: "",
-    package: "executive",
+    package: defaultPkg,
   });
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [submitted, setSubmitted] = useState(false);
@@ -338,7 +354,7 @@ const styles: Record<string, React.CSSProperties> = {
   },
   packages: {
     display: "grid",
-    gridTemplateColumns: "1fr 1fr",
+    gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))",
     gap: "16px",
     marginTop: "10px",
   },
