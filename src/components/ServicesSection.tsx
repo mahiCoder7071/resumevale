@@ -38,6 +38,7 @@ const profileSamples = [
   "/images/l3.png",
   "/images/l4.png",
   "/images/l5.png",
+  "/images/l6.png",
 ];
 
 // 👉 Change this price to your actual combo price

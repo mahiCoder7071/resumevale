@@ -6,24 +6,24 @@
 
 @layer base {
   :root {
-    /* ── ResumeVale Navy Blue Core ── */
-    --background: 220 45% 8%;
-    --foreground: 0 0% 96%;
+    /* ── ResumeVale Light Core ── */
+    --background: 0 0% 100%;
+    --foreground: 220 40% 12%;
 
-    --card: 220 40% 11%;
-    --card-foreground: 0 0% 94%;
+    --card: 0 0% 100%;
+    --card-foreground: 220 40% 12%;
 
-    --popover: 220 40% 11%;
-    --popover-foreground: 0 0% 94%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 40% 12%;
 
     --primary: 214 85% 50%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 220 35% 16%;
-    --secondary-foreground: 0 0% 80%;
+    --secondary: 220 30% 96%;
+    --secondary-foreground: 220 35% 22%;
 
-    --muted: 220 35% 16%;
-    --muted-foreground: 220 15% 55%;
+    --muted: 220 20% 95%;
+    --muted-foreground: 220 12% 45%;
 
     --accent: 214 85% 50%;
     --accent-foreground: 0 0% 100%;
@@ -31,8 +31,8 @@
     --destructive: 0 70% 50%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 220 30% 20%;
-    --input: 220 35% 14%;
+    --border: 220 20% 88%;
+    --input: 220 20% 90%;
     --ring: 214 85% 50%;
 
     --radius: 0.75rem;
@@ -103,8 +103,8 @@
     z-index: -1;
     pointer-events: none;
     background:
-      radial-gradient(ellipse 70% 50% at 50% 0%,  rgba(21, 101, 192, 0.18) 0%, transparent 65%),
-      radial-gradient(ellipse 40% 30% at 90% 80%, rgba(0, 180, 216, 0.08)  0%, transparent 60%);
+      radial-gradient(ellipse 70% 50% at 50% 0%,  rgba(21, 101, 192, 0.07) 0%, transparent 65%),
+      radial-gradient(ellipse 40% 30% at 90% 80%, rgba(0, 180, 216, 0.05)  0%, transparent 60%);
     animation: blueFloat 18s ease-in-out infinite alternate;
   }
 
